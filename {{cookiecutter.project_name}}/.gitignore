@@ -26,6 +26,8 @@ cover/
 .coverage*
 .tox
 .venv
+.pytest_cache/
+.mypy_cache/
 
 # Translations
 *.mo
