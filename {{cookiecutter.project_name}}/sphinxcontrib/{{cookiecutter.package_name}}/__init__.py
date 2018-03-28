@@ -1,6 +1,6 @@
 """
     sphinxcontrib.{{ cookiecutter.package_name }}
-    ~~~~~~~~~~~~~~{{ '~' * (cookiecutter.project_name|length) }}
+    ~~~~~~~~~~~~~~{{ '~' * (cookiecutter.package_name|length) }}
 
     {{ cookiecutter.short_description }}
 
