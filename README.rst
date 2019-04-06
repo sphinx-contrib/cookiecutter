@@ -32,13 +32,17 @@ Install `cookiecutter`::
 Generate a Python package::
 
     cookiecutter https://github.com/sphinx-contrib/cookiecutter.git
-
+    
 Next steps:
 
 - Create a GitHub repo for your project and push your code.
 
 - Read `CONTRIBUTING <CONTRIBUTING>`__ for information on submitting the
   package to the `sphinx-contrib` organization.
+
+Note(s):
+
+ - One may generate the documentation their project by running `python setup.py build_sphinx -b html|singlehtml|latex|...` from the project root.
 
 License
 -------
