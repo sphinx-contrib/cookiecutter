@@ -10,6 +10,7 @@
   "copyright"            : 2019,
   "documentation_source" : "docs",
   "documentation_target" : "dist",
-  "index"                : "index"
+  "index"                : "index",
+  "language"             : "en"
 }
 
