@@ -5,4 +5,7 @@
   "short_description": "A short description of the extension",
   "author_name": "Your name",
   "author_email": "Your email"
+  "release"   : "0.0.0",
+  "copyright" : 2019,
+  "index"     : "index",
 }
