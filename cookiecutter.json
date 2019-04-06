@@ -8,6 +8,7 @@
   "version"   : "0.0",
   "release"   : "0.0.0",
   "copyright" : 2019,
-  "documentation" : 2019,
+  "documentation_source" : "docs",
+  "documentation_target" : "dist",
   "index"     : "index",
 }
