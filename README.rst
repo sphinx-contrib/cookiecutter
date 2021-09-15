@@ -37,7 +37,7 @@ Next steps:
 
 - Create a GitHub repo for your project and push your code.
 
-- Read `CONTRIBUTING <CONTRIBUTING>`__ for information on submitting the
+- Read `CONTRIBUTING <CONTRIBUTING.rst>`__ for information on submitting the
   package to the `sphinx-contrib` organization.
 
 License
