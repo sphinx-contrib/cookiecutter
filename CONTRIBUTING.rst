@@ -7,4 +7,4 @@ If you would like to contribute to this project, or any project in the
 `Sphinx documentation`_.
 
 .. _sphinx-contrib: https://github.com/sphinx-contrib
-.. _Sphinx documentation: http://www.sphinx-doc.org/en/stable/contrib/
+.. _Sphinx documentation: https://www.sphinx-doc.org/en/master/internals/contributing.html
