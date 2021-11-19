@@ -1,12 +1,17 @@
+[build-system]
+requires = [
+    "flit_core >=3.4,<4",
+    "wheel",
+]
+build-backend = "flit_core.buildapi"
+
 [metadata]
 name = {{ cookiecutter.project_name }}
-summary = {{ cookiecutter.short_description }}
-description-file =
-    README.rst
-author = {{ cookiecutter.author_name }}
-author-email = {{ cookiecutter.author_email }}
-home-page = http://www.sphinx-doc.org/
-classifier =
+readme = README.md
+authors = [
+    {name = {{ cookiecutter.author_name }}, email = {{ cookiecutter.author_email }} }
+]
+classifiers =
     Development Status :: 3 - Alpha
     Environment :: Console
     Environment :: Web Environment
@@ -16,22 +21,19 @@ classifier =
     Operating System :: OS Independent
     Programming Language :: Python
     Programming Language :: Python :: 3
-    Programming Language :: Python :: 3.6
     Programming Language :: Python :: 3.7
     Programming Language :: Python :: 3.8
     Programming Language :: Python :: 3.9
     Topic :: Documentation
     Topic :: Documentation :: Sphinx
     Topic :: Utilities
+dynamic = ["version", "description"]
 
-[files]
-packages =
-    sphinxcontrib
-namespace_packages =
-    sphinxcontrib
+[project.urls]
+Homepage = http://www.sphinx-doc.org/
 
-[mypy]
-python_version = 3.8
+[tool.mypy]
+python_version = 3.9
 show_column_numbers = True
 show_error_context = True
 ignore_missing_imports = True
@@ -40,6 +42,6 @@ incremental = True
 check_untyped_defs = True
 warn_unused_ignores = True
 
-[flake8]
+[tool.flake8]
 show-source = True
 builtins = unicode
