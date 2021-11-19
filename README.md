@@ -1,4 +1,4 @@
-# cookiecutter-sphinx
+# cookiecutter-sphinx-ext
 
 A [cookiecutter] template for a [Sphinx extension].
 
