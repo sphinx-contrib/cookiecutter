@@ -3,6 +3,7 @@
 # See https://github.com/sphinx-doc/sphinx/issues/7008#issuecomment-573092764
 
 import pytest
+
 # Could this be replaced by stdlib pathlib?
 # See https://github.com/sphinx-doc/sphinx/issues/9524#issuecomment-895412145
 from sphinx.testing.path import path
