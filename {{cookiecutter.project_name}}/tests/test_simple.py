@@ -15,7 +15,7 @@ def test_latex(app):
 
 
 @pytest.mark.sphinx(testroot="myst")
-def test_case1(app):
+def test_myst(app):
     # app is a Sphinx application for myst sphinx project
     # (tests/cases/test-myst)
     app.build()
