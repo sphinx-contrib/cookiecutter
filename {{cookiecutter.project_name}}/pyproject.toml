@@ -5,32 +5,36 @@ requires = [
 ]
 build-backend = "flit_core.buildapi"
 
-[metadata]
-name = {{ cookiecutter.project_name }}
-readme = README.md
+[project]
+name = "{{ cookiecutter.project_name }}"
+readme = "README.md"
 authors = [
-    {name = {{ cookiecutter.author_name }}, email = {{ cookiecutter.author_email }} }
+    {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"}
 ]
-classifiers =
-    Development Status :: 3 - Alpha
-    Environment :: Console
-    Environment :: Web Environment
-    Framework :: Sphinx :: Extension
-    Intended Audience :: Developers
-    License :: OSI Approved :: BSD License
-    Operating System :: OS Independent
-    Programming Language :: Python
-    Programming Language :: Python :: 3
-    Programming Language :: Python :: 3.7
-    Programming Language :: Python :: 3.8
-    Programming Language :: Python :: 3.9
-    Topic :: Documentation
-    Topic :: Documentation :: Sphinx
-    Topic :: Utilities
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Utilities",
+]
 dynamic = ["version", "description"]
 
+[tool.flit.module]
+name = "{{ cookiecutter.package_name }}"
+
 [project.urls]
-Homepage = http://www.sphinx-doc.org/
+Homepage = "http://www.sphinx-doc.org/"
 
 [project.optional-dependencies]
 dev = [
@@ -44,7 +48,3 @@ doc = [
     "myst-parser",
     "sphinx~=4.3.0",
 ]
-
-[tool.flake8]
-show-source = True
-builtins = unicode

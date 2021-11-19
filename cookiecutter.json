@@ -1,7 +1,7 @@
 {
-  "github_org": "sphinx-contrib",
-  "package_name": "The name of the extension package",
-  "project_name": "sphinxcontrib-{{ cookiecutter.package_name}}",
+  "github_org": "Your account or organization",
+  "project_name": "The name of the extension package (as in `pip install {project_name}`",
+  "package_name": "{{ cookiecutter.project_name.lower().replace('-', '_') }}",
   "short_description": "A short description of the extension",
   "author_name": "Your name",
   "author_email": "Your email"
