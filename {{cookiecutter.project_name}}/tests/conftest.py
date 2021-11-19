@@ -1,9 +1,19 @@
-"""
-    pytest config for sphinxcontrib/{{ cookiecutter.package_name}}/tests
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{{ '~' * cookiecutter.package_name|length }}~~~~~~
+# In the absence of official documentation,
+# this is a good scaffolding
+# See https://github.com/sphinx-doc/sphinx/issues/7008#issuecomment-573092764
 
-    :copyright: Copyright 2017 by {{ cookiecutter.author_name }} <{{cookiecutter.author_email }}>
-    :license: BSD, see LICENSE for details.
-"""
+import pytest
 
-pytest_plugins = 'sphinx.testing.fixtures'
+# Could this be replaced by stdlib pathlib?
+# See https://github.com/sphinx-doc/sphinx/issues/9524#issuecomment-895412145
+from sphinx.testing.path import path
+
+pytest_plugins = "sphinx.testing.fixtures"
+
+# See https://github.com/dbader/pytest-mypy/issues/123
+collect_ignore = ["./cases/"]
+
+
+@pytest.fixture(scope="session")
+def rootdir():
+    return path(__file__).parent.abspath() / "cases"

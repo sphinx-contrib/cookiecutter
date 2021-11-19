@@ -38,13 +38,24 @@ Homepage = "http://www.sphinx-doc.org/"
 
 [project.optional-dependencies]
 dev = [
+    "furo",
     "hypothesis",
+    "myst-parser",
     "pytest",
     "pytest-cov",
     "pytest-mypy",
+    "sphinx",
 ]
 doc = [
     "furo",
     "myst-parser",
     "sphinx~=4.3.0",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
 ]
