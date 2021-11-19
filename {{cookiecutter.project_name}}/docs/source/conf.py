@@ -18,10 +18,10 @@ extensions = [
     "myst_parser",
 ]
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 
 # -- Options for HTML output
 
-html_theme = 'furo'
-html_static_path = ['_static']
+html_theme = "furo"
+html_static_path = ["_static"]
