@@ -13,7 +13,7 @@ def test_latex(app):
     app.build()
 
 
-@pytest.mark.sphinx(testroot="case1")
+@pytest.mark.sphinx(testroot="myst")
 def test_case1(app):
     # app is a Sphinx application for case1 sphinx project (`tests/cases/test-case1`)
     app.build()
