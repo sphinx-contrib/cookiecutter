@@ -10,6 +10,7 @@ from sphinx.testing.path import path
 
 pytest_plugins = "sphinx.testing.fixtures"
 
+# See https://github.com/dbader/pytest-mypy/issues/123
 collect_ignore = ["./cases/"]
 
 
