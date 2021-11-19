@@ -9,6 +9,8 @@ from sphinx.testing.path import path
 
 pytest_plugins = "sphinx.testing.fixtures"
 
+collect_ignore = ["./cases/"]
+
 
 @pytest.fixture(scope="session")
 def rootdir():
