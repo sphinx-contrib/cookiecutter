@@ -3,7 +3,8 @@ import pytest
 
 
 def test(app):
-    # app is a Sphinx application object for default sphinx project (`tests/cases/test-root`)
+    # app is a Sphinx application object for default sphinx project
+    # (tests/cases/test-root)
     app.build()
 
 
@@ -15,7 +16,8 @@ def test_latex(app):
 
 @pytest.mark.sphinx(testroot="myst")
 def test_case1(app):
-    # app is a Sphinx application for case1 sphinx project (`tests/cases/test-case1`)
+    # app is a Sphinx application for myst sphinx project
+    # (tests/cases/test-myst)
     app.build()
 
 
