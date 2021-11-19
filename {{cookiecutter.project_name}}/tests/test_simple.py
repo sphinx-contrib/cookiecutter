@@ -21,7 +21,7 @@ def test_case1(app):
     app.build()
 
 
-@pytest.mark.sphinx(confoverrides={"master_doc": "content"})
+@pytest.mark.sphinx(confoverrides={"html_theme": "furo"})
 def test_confoverrides(app):
     # a Sphinx application configured with given setting
     app.build()

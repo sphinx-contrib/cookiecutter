@@ -38,6 +38,7 @@ Homepage = "http://www.sphinx-doc.org/"
 
 [project.optional-dependencies]
 dev = [
+    "furo",
     "hypothesis",
     "myst-parser",
     "pytest",
