@@ -28,7 +28,7 @@ pip install cookiecutter
 Generate a Python package:
 
 ```
-cookiecutter https://github.com/astrojuanlu/sphinx-ext-cookiecutter.git
+cookiecutter https://github.com/astrojuanlu/cookiecutter-sphinx-ext.git
 ```
 
 ## License
