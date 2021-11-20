@@ -22,6 +22,8 @@ click==8.0.3
     # via cookiecutter
 cookiecutter==1.7.3
     # via pytest-cookies
+coverage[toml]==6.1.2
+    # via pytest-cov
 filelock==3.4.0
     # via pytest-mypy
 idna==3.3
@@ -54,8 +56,11 @@ pytest==6.2.5
     # via
     #   -r requirements.in
     #   pytest-cookies
+    #   pytest-cov
     #   pytest-mypy
 pytest-cookies==0.6.1
+    # via -r requirements.in
+pytest-cov==3.0.0
     # via -r requirements.in
 pytest-mypy==0.8.1
     # via -r requirements.in
@@ -75,6 +80,8 @@ toml==0.10.2
     # via
     #   mypy
     #   pytest
+tomli==1.2.2
+    # via coverage
 typing-extensions==4.0.0
     # via mypy
 urllib3==1.26.7
