@@ -17,17 +17,18 @@ def test_latex(app: SphinxTestApp) -> None:
     assert app.statuscode == 0, "Build finished with problems"
 
 
-@pytest.mark.sphinx(testroot="myst")
+# https://stackoverflow.com/a/70054072/554319
+@pytest.mark.parametrize(
+    "",
+    [
+        pytest.param(marks=pytest.mark.sphinx),
+        pytest.param(marks=pytest.mark.sphinx(testroot="myst")),
+        pytest.param(marks=pytest.mark.sphinx(confoverrides={"html_theme": "furo"})),
+    ],
+)
 def test_myst(app: SphinxTestApp) -> None:
     # app is a Sphinx application for myst sphinx project
     # (tests/cases/test-myst)
-    app.build()
-    assert app.statuscode == 0, "Build finished with problems"
-
-
-@pytest.mark.sphinx(confoverrides={"html_theme": "furo"})
-def test_confoverrides(app: SphinxTestApp) -> None:
-    # a Sphinx application configured with given setting
     app.build()
     assert app.statuscode == 0, "Build finished with problems"
 
