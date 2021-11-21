@@ -30,3 +30,16 @@ def test_confoverrides(app: SphinxTestApp) -> None:
     # a Sphinx application configured with given setting
     app.build()
     assert app.statuscode == 0, "Build finished with problems"
+
+
+def test_config(tempdir, make_app):
+    conf_contents = """extensions = [
+    "{{ cookiecutter.package_name }}",
+]
+
+nitpicky = True
+"""
+    (tempdir / "conf.py").write_text(conf_contents)
+    app = make_app(srcdir=tempdir)
+
+    assert "{{ cookiecutter.package_name }}" in app.config["extensions"]
