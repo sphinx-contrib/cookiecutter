@@ -9,7 +9,7 @@ def test_project_tree(cookies):
         }
     )
 
-    assert result.exit_code == 0
+    assert result.exit_code == 0, result.exception
     assert result.exception is None
     assert result.project_path.name == "project-name"
     assert result.project_path.is_dir()

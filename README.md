@@ -14,6 +14,8 @@ documentation][sphinx documentation].
 
 Other stuff we include:
 
+- [GitHub Actions] for continuous integration.
+- [Read the Docs] for continuous documentation.
 - [mypy] integration for type annotations.
 - [black] for automatic Python code formatting.
 
@@ -43,3 +45,5 @@ cookiecutter https://github.com/astrojuanlu/cookiecutter-sphinx-ext.git
 [sphinx extension]: http://www.sphinx-doc.org/en/stable/extdev/
 [tox]: https://tox.readthedocs.io/en/latest/
 [black]: https://black.readthedocs.io/
+[GitHub Actions]: https://github.com/features/actions
+[Read the Docs]: https://readthedocs.org
