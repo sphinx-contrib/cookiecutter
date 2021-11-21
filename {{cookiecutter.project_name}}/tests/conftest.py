@@ -17,3 +17,10 @@ collect_ignore = ["./cases/"]
 @pytest.fixture(scope="session")
 def rootdir():
     return path(__file__).parent.abspath() / "cases"
+
+
+@pytest.fixture()
+def app(app):
+    # See https://github.com/sphinx-doc/sphinx/issues/7008#issuecomment-974691469
+    app.warningiserror = app.keep_going = True
+    return app
