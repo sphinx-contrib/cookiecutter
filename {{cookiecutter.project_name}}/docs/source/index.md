@@ -1,4 +1,6 @@
-# {{ cookiecutter.project_name }}
+```{include} ../../README.md
+:relative-images:
+```
 
 ```{toctree}
 :caption: 'Contents:'
