@@ -14,7 +14,7 @@ documentation][sphinx documentation].
 
 Other stuff we include:
 
-- [GitHub Actions] for continuous integration.
+- [GitHub Actions] for continuous integration and publishing to PyPI.
 - [Read the Docs] for continuous documentation.
 - [mypy] integration for type annotations.
 - [black] for automatic Python code formatting.
