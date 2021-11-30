@@ -34,7 +34,9 @@ dynamic = ["version", "description"]
 name = "{{ cookiecutter.package_name }}"
 
 [project.urls]
-Homepage = "http://www.sphinx-doc.org/"
+source = "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_name }}"
+tracker = "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_name }}/issues"
+documentation = "https://{{ cookiecutter.project_name }}.readthedocs.io"
 
 [project.optional-dependencies]
 dev = [
