@@ -19,8 +19,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r test-requirements.txt
-        pip install pytest mypy flake8 isort yapf
+        pip install -e .[develop]
 
     - name: Run tests with pytest
       run: pytest

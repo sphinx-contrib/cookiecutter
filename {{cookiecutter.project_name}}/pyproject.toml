@@ -29,11 +29,18 @@ classifiers = [
 python = "^3.6"
 pbr = "^5.5.1"
 
-[tool.poetry.dev-dependencies]
-pytest = "*"
-sphinx = "*"
-mypy = "*"
-flake8 = "*"
+pytest = {version="*", optional=true}
+sphinx = {version="*", optional=true}
+mypy = {version="*", optional=true}
+flake8 ={version="*", optional=true}
+
+[tool.poetry.extras]
+develop = [
+    "pytest",
+    "sphinx",
+    "mypy",
+    "flake8"
+]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
