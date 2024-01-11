@@ -6,5 +6,8 @@
   "author_name": "Your name",
   "author_email": "Your email",
   "home_page": "http://www.sphinx-doc.org/",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "_copy_without_render": [
+      "*.yaml"
+  ]
 }
