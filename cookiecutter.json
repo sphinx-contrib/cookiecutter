@@ -4,5 +4,7 @@
   "project_name": "sphinxcontrib-{{ cookiecutter.package_name}}",
   "short_description": "A short description of the extension",
   "author_name": "Your name",
-  "author_email": "Your email"
+  "author_email": "Your email",
+  "home_page": "http://www.sphinx-doc.org/",
+  "version": "0.0.1"
 }
