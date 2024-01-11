@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1  # Use the latest version from the pre-commit-hooks repository
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 4.0.1  # Use the latest version of flake8
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1  # Use the latest version of isort
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/asottile/black
+    rev: 22.3.0  # Use the latest version of black
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.931  # Use the latest version of mypy
+    hooks:
+      - id: mypy
